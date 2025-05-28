@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  call:
+    uses: LaisLora/github-actions-templates/.github/workflows/build_PHP.yml@main
+    with:
+      environment: main
+      project: Sitebase
+    secrets: inherit
